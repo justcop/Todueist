@@ -1,4 +1,4 @@
-# Author: Martin Green, Date: 04/28/2020
+# Author: MilesBorealis, Date: 04/28/2020
 # Based off of u/DinoPunch's reddit post: https://www.reddit.com/r/todoist/comments/fdlb6l/i_use_labels_to_set_deadlines_so_i_can_move_the/
 from todoist.api import TodoistAPI
 
