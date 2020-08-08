@@ -2,8 +2,8 @@
 import datetime
 import todoist
 
-#Todoist API
-api = todoist.TodoistAPI('fe08beea7ebb3fd60dd8687f36bf162e85778a92')
+#Todoist API -> Find and place your API Below
+api = todoist.TodoistAPI('')
 
 #define today, tomorrow
 today = datetime.date.today()
