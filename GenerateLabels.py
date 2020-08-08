@@ -1,12 +1,18 @@
 # Author: MilesBorealis, Date: 04/28/2020
 # Based off of u/DinoPunch's reddit post: https://www.reddit.com/r/todoist/comments/fdlb6l/i_use_labels_to_set_deadlines_so_i_can_move_the/
 from todoist.api import TodoistAPI
+import datetime
 
 #Set api token below.
 api = TodoistAPI('')
 
 #create label for 'Due'
 label = api.label.add('Due')
+
+#create label for current year
+today = datetime.date.today()
+year = i.strftime("@%Y")
+label = api.label.add(year)
 
 #create labels for months
 months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
