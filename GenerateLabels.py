@@ -28,8 +28,12 @@ for y in range(1,32):
     """
     To changes colors of labels, add ", color = XX" after str(y). Refer to Todoist RestAPI for color codes and replace XX.
     https://developer.todoist.com/rest/v1/#colors
-    """
-    label = api.labels.add(str(y))
-
+    """ 
+    #Add leading 0 for 1-9
+    if y < 10:
+        label = api.labels.add("0" + str(y))
+    else:
+        label = api.labels.add(str(y))
+    
 #commit changes
 api.commit()
