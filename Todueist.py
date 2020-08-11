@@ -8,7 +8,7 @@ import todoist
 from dateutil.relativedelta import *
 
 #Todoist API initiation
-api = todoist.TodoistAPI('fe08beea7ebb3fd60dd8687f36bf162e85778a92')
+api = todoist.TodoistAPI('')
 
 #Establish today's date
 today = datetime.date.today()
