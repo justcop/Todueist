@@ -28,7 +28,7 @@ This is a python script that creates due date labels and a filter for upcoming d
 
         python Todueist.py
 
-5. **Recommended:** I recommend running this script daily using Task Scheduler if you are windows. This allows the filter to update on a daily basis and always show you the next 
+5. **Recommended:** I recommend running this script daily using Task Scheduler if you are windows. This allows the filter to update on a daily basis and always show you the upcoming days. Otherwise, the filter will not be updated and the days previewed will remain stagnant. 
 
 General Usage
 - Adds Due, Month, Day, and Year labels to Todoist. 
