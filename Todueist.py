@@ -20,7 +20,8 @@ Check for due date labels. If labels are not present, they will be created.
 #Create Array for Label Objects
 labels1 = api.state['labels']
 
-first_of_the_year = datetime.datetime(2020, 1, 1)
+current_year = date.today().year
+first_of_the_year = datetime.datetime(current_year, 1, 1)
 
 #Create month labels
 for i in range(12):
@@ -81,10 +82,11 @@ years_ahead = 1
 #Variable should not be changed.
 years = 1
 
+#Set up condition to identify if year label is found
+year_found = False
+
 #Create year lables
 for i in range(years+years_ahead):
-    #Set up condition to identify if year label is found
-    year_found = False
 
     #increment year
     x = today + relativedelta(years=+i)
@@ -132,6 +134,7 @@ for x in filters1:
 if taskExists == False:
     print("Filter is not present. Creating Filter 'Upcoming Due Tasks'")
     filter = api.filters.add(name = "Upcoming Due Tasks", query = "@Due", color = 42, is_favorite = 1)
+    filterid = filter.temp_id
     print(filter.temp_id)
 
 #Update Filter
