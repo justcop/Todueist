@@ -133,7 +133,8 @@ if taskExists == False:
     print("Filter is not present. Creating Filter 'Upcoming Due Tasks'")
     filter = api.filters.add(name = "Upcoming Due Tasks", query = "@Due", color = 42, is_favorite = 1)
     print(filter.temp_id)
-
+    filterid = filter.temp_id
+    
 #Update Filter
 
 #Days must be greater than 0
