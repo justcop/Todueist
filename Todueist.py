@@ -20,7 +20,7 @@ Check for due date labels. If labels are not present, they will be created.
 #Create Array for Label Objects
 labels1 = api.state['labels']
 
-current_year = date.today().year
+current_year = today.year
 first_of_the_year = datetime.datetime(current_year, 1, 1)
 
 #Create month labels
