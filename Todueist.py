@@ -17,10 +17,14 @@ today = datetime.date.today()
 Check for due date labels. If labels are not present, they will be created.
 """
 
+
 #Create Array for Label Objects
 labels1 = api.state['labels']
 
-current_year = date.today().year
+if api.state['error']:
+    print("Please ensure you have inserted a valid api key in to the script")
+
+current_year = date.year
 first_of_the_year = datetime.datetime(current_year, 1, 1)
 
 #Create month labels
